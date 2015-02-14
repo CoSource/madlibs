@@ -1,0 +1,132 @@
+
+body{
+margin:0;
+padding:0;
+line-height: 1.5em;
+}
+
+b{font-size: 110%;}
+em{color: red;}
+
+#maincontainer{
+width: 780px; /*Width of main container*/
+margin: 0 auto; /*Center container on page*/
+margin-top: 100px;
+border: 2px solid;
+}
+
+h1{
+font-size : 50px;
+}
+
+#topsection{
+height: 120px; /*Height of top section*/
+border-bottom: 2px solid;
+}
+
+#topsection h1{
+margin: 0;
+padding-top: 15px;
+}
+
+#contentwrapper{
+float: left;
+width: 100%;
+}
+
+#contentcolumn{
+margin: 0 0px 0 0px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+border-bottom: 2px solid;
+}
+
+#leftcolumn{
+float: left;
+width: 180px; /*Width of left column in pixel*/
+margin-left: -840px; /*Set margin to that of -(MainContainerWidth)*/
+background: #C8FC98;
+}
+
+#rightcolumn{
+float: left;
+width: 190px; /*Width of right column*/
+margin-left: -190px; /*Set left margin to -(RightColumnWidth)*/
+background: #FDE95E;
+}
+
+#footer{
+clear: left;
+width: 100%;
+background: black;
+color: #FFF;
+text-align: center;
+padding: 4px 0;
+}
+
+#footer a{
+color: #FFFF80;
+}
+
+.innertube{
+margin: 100px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+.smileybox{
+float: left;
+margin: 10px;
+
+}
+
+.logo{
+text-align: center;
+}
+
+.words {
+	margin-left: 20px;
+}
+
+.words input
+{
+	margin-right: 20px;
+	border: 2px solid;
+	text-align: center;
+}
+
+
+
+/* ####### responsive layout CSS ####### */
+
+@media (max-width: 840px){ /* 1st level responsive layout break point- drop right column down*/
+	#maincontainer{
+	width: 100%;
+	}
+
+	#leftcolumn{
+	margin-left: -100%;
+	}
+	
+	#rightcolumn{
+	float: none;
+	width: 100%;
+	margin-left: 0;
+	clear: both;
+	}
+	
+	#contentcolumn{
+	margin-right: 0;
+	}
+}
+
+@media (max-width: 600px){ /* 2nd level responsive layout break point- drop left column down */
+	#leftcolumn{
+	float: none;
+	width: 100%;
+	clear: both;
+	margin-left: 0;
+	}
+	
+	#contentcolumn{
+	margin-left: 0;
+	}
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NgMadLibs</title>
+<link rel="stylesheet" href="styles/main.css" />
+
+
+</head>
+<body>
+<div id="maincontainer" ng-app="">
+
+<div id="topsection">
+	<div class="innertube">
+		<div class="smileybox">
+			<img src="images/mad-lib-happy-face.png" />
+		</div>
+		<div class="logo">
+			<img src="images/ng-mad-libs-logo.png" />
+			<h1>Automate This!</h1>
+		</div>
+		
+	</div>
+</div>
+
+<div id="contentwrapper">
+	<div id="contentcolumn">
+		<div class="innertube">
+			<h2>Provide the following words:</h2>
+			<div class="words" >
+				<p>
+					<input type="text" ng-model="female_name" placeholder="Female Name"  />
+					<input type="text" ng-model="dirty_task" placeholder="Dirty tax" />
+					<input type="text" ng-model="obnoxious_celebrity" placeholder="Obnoxious celebrity" />
+				</p>
+				<p>
+					<input type="text" ng-model="job_title" placeholder="Job title" />
+					<input type="text" ng-model="celebrity" placeholder="Celebrity" />
+					<input type="text" ng-model="huge_number" placeholder="Huge number" />
+				</p>
+				<p>
+					<input type="text" ng-model="tedious_task" placeholder="Tedious task" />
+					<input type="text" ng-model="useless_skill" placeholder="Useless skill" />
+					<input type="text" ng-model="adjective" placeholder="Adjective" />
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="contentcolumn">
+		<div class="innertube">
+		<p>
+			<span ng-hide="female_name">[Female Name]</span><u>{{ female_name }}</u> 
+			was a <span ng-hide="job_title">[Job Title]</span><u>{{ job_title }}</u>  who loved technology. Although she loved parts of her job, she absolutely hated 
+			<span ng-hide="tedious_task">[Tedious Task]</span><u>{{ tedious_task }}</u>  and <span ng-hide="dirty_task">[Dirty Task]</span><u>{{ dirty_task }}</u> .
+			So, <span ng-hide="female_name">[Female Name]</span><u>{{ female_name }}</u>  met with her life mentor 
+			<span ng-hide="celebrity">[Celebrity]</span><u>{{ celebrity }}</u>  who told her to learn how to 
+			<span ng-hide="useless_skill">[Useless Skill]</span><u>{{ useless_skill }}</u>  with Thinkful. 
+		</p>
+		<p>
+			Thinkful didn't offer a course on <span ng-hide="useless_skill">[Useless Skill]</span><u>{{ useless_skill }}</u>  so she studied programming instead.
+			What a great decision! With her new skills, <span ng-hide="female_name">[Female Name]</span><u>{{ female_name }}</u>  built a(n) 
+			<span ng-hide="adjective">[Adjective]</span><u>{{ adjective }}</u>  robot named 
+			<span ng-hide="obnoxious_celebrity">[Obnoxious Celebrity]</span><u>{{obnoxious_celebrity}}</u> 
+			that not only loved <span ng-hide="dirty_task">[Dirty Task]</span><u>{{ dirty_task }}</u>  
+			but did it <span ng-hide="huge_number">[Huge Number]</span><u>{{ huge_number }}</u>  faster.
+		</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="footer">NgMadLibs by Richard Bailey</div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js" type="text/javascript"></script>
+</body>
+</html>
