@@ -93,6 +93,21 @@ text-align: center;
 	text-align: center;
 }
 
+.error {
+    display:block;
+    color: red;
+}
+
+.boxme.ng-hide {
+    animation: fadeOut 5s;
+     
+}
+
+.boxme {
+    animation: fadeInUp 5s;
+}
+
+
 
 
 /* ####### responsive layout CSS ####### */
